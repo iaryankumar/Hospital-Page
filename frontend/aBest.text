@@ -1,0 +1,6 @@
+<div className='h-[90vh] w-[99.5%] m-auto rounded mt-2 flex items-center px-3'>
+        <img src="./meds.png" />
+        <div className='h-full w-full flex items-center ps-20 pe-4'>
+            <h1 className='text-7xl font-rt'>Trusted Treatments for a <span className='text-blue-700'>Healthier</span> Tomorrow</h1>
+        </div>
+      </div>
