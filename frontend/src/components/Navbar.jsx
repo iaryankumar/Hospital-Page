@@ -47,10 +47,11 @@ const Navbar = ({home,doctor,near}) => {
 
           <div className=' w-[200px] p-2'>
             <ul className='text-white flex flex-col gap-3.5  font-rubik text-[14px] font-light'>
-              <li className='w-full'><button className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Home</button></li>
+              <li className='w-full'><button onClick={()=>{home();setMenuOpen(false)}} className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Home</button></li>
               {/* <li className='w-full'><button className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Medicines</button></li> */}
-              <li className='w-full'><button className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Specalists</button></li>
+              <li className='w-full'><button onClick={()=>{doctor();setMenuOpen(false)}} className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Specalists</button></li>
               <li className='w-full'><button className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Faculties</button></li>
+              <li className='w-full'><button onClick={()=>{near();setMenuOpen(false)}} className='bg-[#1a1818] w-full py-2 rounded cursor-pointer'>Near By</button></li>
               <li className='w-full'><button onClick={handleWhatsapp} className='bg-blue-700 w-full py-1.5 rounded cursor-pointer'>Book Appoinment</button></li>
               <li onClick={handleSwipes} className='w-full flex items-center justify-center font-light underline font-mont cursor-pointer'>close</li>
             </ul>
